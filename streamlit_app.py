@@ -13,18 +13,14 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 
 st.dataframe(my_fruit_list)
 
-st.radio("Pick one", ["cats", "dogs"])
+# Let's put a pick list here so they can pick the fruit they want to include 
+streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
+
+# Display the table on the page.
+my_fruit_list = my_fruit_list.set_index('Fruit')
 
 
 
-tab1, tab2 = st.tabs(["Tab 1", "Tab2"])
-tab1.write("this is tab 1")
-tab2.write("this is tab 2")
-
-st.balloons()
-st.snow()
 
 
 
-st.balloons()
-st.snow()

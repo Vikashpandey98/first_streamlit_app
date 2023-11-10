@@ -23,3 +23,8 @@ tab2.write("this is tab 2")
 
 st.balloons()
 st.snow()
+
+
+
+st.balloons()
+st.snow()
